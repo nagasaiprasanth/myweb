@@ -1,7 +1,7 @@
 pipeline{
     agent any
      tools {
-        maven 'Maven-3.0.5'
+        maven 'M2_HOME'
     }
     
     environment{
@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                git credentialsId: 'javahome2', url: 'https://github.com/srinivas1987devops/myweb.git'
+                git credentialsId: 'javahome2', url: 'https://github.com/nagasaiprasanth/myweb.git'
             }
         }
         stage("Maven Build"){
