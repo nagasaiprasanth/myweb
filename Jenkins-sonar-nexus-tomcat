@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage("Git Checkout"){
             steps{
-                url: 'https://github.com/nagasaiprasanth/myweb.git'
+                git 'https://github.com/nagasaiprasanth/myweb'
             }
         }
         stage("Maven Build"){
