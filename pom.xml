@@ -26,8 +26,8 @@
 	</dependencies>
 	
 	<distributionManagement>
-		 <snapshotRepository>
-		    <id>nexusRepo</id>
+		 <releaseRepository>
+		    <id>nexus</id>
 		    <url>http://13.232.254.190:8081/repository/kc-wed-release/</url>
   	</distributionManagement>
 	
